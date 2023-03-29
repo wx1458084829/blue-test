@@ -1,5 +1,7 @@
 package com.example.blue_test;
 
+import static android.widget.Toast.LENGTH_LONG;
+
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -17,6 +19,7 @@ import com.example.blue_test.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,8 +42,10 @@ public class MainActivity extends AppCompatActivity {
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+//                Snackbar.make(view, "底部提示框", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//                显示底部通知
+                Toast.makeText(MainActivity.this,"a",LENGTH_LONG).show();
             }
         });
     }
